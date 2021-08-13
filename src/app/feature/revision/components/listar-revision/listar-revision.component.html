@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Matrícula Inmobiliaria</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col">Fecha Visita</th>
+                    <th scope="col">Calificación</th>
+                    <th scope="col">Fecha Próxima Revisión</th>
+                    <th scope="col">Valor Revisión</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let revisiones of revision" id="r">
+                    <th scope="row">{{revisiones.idRevision}}</th>
+                    <td>{{revisiones.matriculaInmobiliaria}}</td>
+                    <td>{{revisiones.direccion}}</td>
+                    <td>{{revisiones.fechaVisita}}</td>
+                    <td>{{revisiones.calificacion}}</td>
+                    <td>{{revisiones.fechaProximaRevision}}</td>
+                    <td>{{revisiones.valorRevision}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

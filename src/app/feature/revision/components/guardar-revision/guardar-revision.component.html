@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <form class="form-control" [formGroup]="revisionForm">
+            <div class="form-group">
+                <label for="MatriculaInmobiliaria">Matricula Inmobiliaria</label>
+                <input class="form-control form-control-sm" type="text" id="matriculaInmobiliaria" formControlName="matriculaInmobiliaria">
+            </div>
+            <div class="form-group">
+                <label for="Direccion">Dirección</label>
+                <input class="form-control form-control-sm" type="text" id="direccion" formControlName="direccion">
+            </div>
+            <div class="form-group">
+                <label for="FechaVisita">Fecha de Visita</label>
+                <input class="form-control form-control-sm" type="text" id="fechaVisita" formControlName="fechaVisita">
+            </div>
+            <div class="form-group">
+                <label for="Calificacion">Calificacion</label>
+                <select class="form-control form-control-sm" id="calificacion" formControlName="calificacion">
+                    <option selected>Seleccione...</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Mala">Mala</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" (click)="cerar()">Guardar</button>
+        </form>
+    </div>
+</div>
